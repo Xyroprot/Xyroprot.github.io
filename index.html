@@ -21,18 +21,18 @@
                 <fieldset class="form__fieldset">
                     <div class="form__field">
                         <input class="form__input" type="text" name="name" pattern="[А-Я][а-яё]+(-[А-Я][а-яё]+)?" placeholder="Имя" minlength="2" maxlength="20" required />
-                        <span class="form__error">error</span>
+                        <span class="form__error">Введенное имя не соответствует формату</span>
                     </div>
                     <div class="form__field">
                         <input class="form__input" type="text" name="email" pattern="([a-z\d]+\S?){2,}@([a-z\d]+\S?){2,}\.[a-z]{2,}" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="\+?\d[\s\(]?\d{3}[\)-]?\s?\d{3}-?\d{2}-?\d{2}" minlength="11" maxlength="18"  required/>
+                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="\+?\d\s?((\(\d{3}\))|(\d{3}))-?\s?\d{3}-?\d{2}-?\d{2}" minlength="11" maxlength="18"  required/>
                         <span class="form__error">Недопустимый формат номера</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="url" name="url" pattern="http(s)?:\/\/((((25[0-5]|2[0-5][0-5]|[0-1][0-9][0-9]|[0-9][0-9]|[0-9])\.){3}(25[0-5]|2[0-5][0-5]|[0-1][0-9][0-9]|[0-9][0-9]|[0-9])\/?(:\d{2,5})?(\/([a-z\d][-_]?){2,})*#?)|((w{3}\.)?([a-z\d]{4,}[-_\.]?){2,}\.[a-z]{2,}(:\d{2,5})?\/(([a-z\d][-_]?){2,}\/)*#?))" placeholder="Ваш сайт" required/>
+                        <input class="form__input" type="url" name="url" pattern="http(s)?:\/\/((((25[0-5]|2[0-5][0-5]|[0-1][0-9][0-9]|[0-9][0-9]|[0-9])\.){3}(25[0-5]|2[0-5][0-5]|[0-1][0-9][0-9]|[0-9][0-9]|[0-9])\/?(:\d{2,5})?(\/([a-z\d][-_\.]?){2,})*#?)|((w{3}\.)?([a-z\d][-_\.]?){4,}\.[a-z]{2,}(:\d{2,5})?(\/([a-z\d][-_\.]?){2,})*\/?#?))" placeholder="Ваш сайт" required/>
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="submit">Отправить</button>
